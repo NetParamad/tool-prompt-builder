@@ -63,7 +63,11 @@ const jsonLd = {
   offers: { "@type": "Offer", price: "0" },
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html
       lang="en"
